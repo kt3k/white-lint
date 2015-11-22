@@ -1,4 +1,4 @@
-# white-lint v1.0.0
+# white-lint v1.0.1
 
 > A tool for creating a cli tool like [standard](https://github.com/feross/standard) lint checker.
 
