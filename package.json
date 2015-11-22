@@ -1,0 +1,29 @@
+{
+  "name": "white-lint",
+  "version": "1.0.0",
+  "description": "A tool for creating a cli tool like [standard](https://github.com/feross/standard) lint checker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kt3k/white-lint.git"
+  },
+  "keywords": [
+    "lint"
+  ],
+  "author": "Yoshiya Hinosawa <stibium121@gmail.com> (https://twitter.com/kt3k)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kt3k/white-lint/issues"
+  },
+  "homepage": "https://github.com/kt3k/white-lint#readme",
+  "dependencies": {
+    "deglob": "^1.0.2",
+    "es6-promise": "^3.0.2",
+    "eslint": "^1.10.1",
+    "multiline": "^1.0.2",
+    "subclassjs": "^1.3.0"
+  }
+}
