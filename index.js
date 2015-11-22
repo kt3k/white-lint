@@ -37,16 +37,16 @@ var WhiteLint = subclass(function (pt) {
      */
     pt.lint = function () {
 
-        this.brutus.execute()
+        this.brutus.exec()
 
     }
 
     /**
      * Lints as an CLI.
      */
-    pt.lintAsClit = function () {
+    pt.lintAsCli = function () {
 
-        this.brutus.executeAsCli()
+        this.brutus.execAsCli()
 
     }
 

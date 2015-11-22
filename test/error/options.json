@@ -1,0 +1,9 @@
+{
+  "cmdName": "souffle",
+  "version": "3.4.5",
+  "cmdOptions": {
+    "eslintOptions": {
+      "extends": "eslint-config-souffle"
+    }
+  }
+}
