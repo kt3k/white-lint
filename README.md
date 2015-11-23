@@ -1,4 +1,4 @@
-# white-lint v1.0.2
+# white-lint v1.0.3
 
 > A tool for creating a cli tool like [standard](https://github.com/feross/standard).
 
