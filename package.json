@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js lib/",
-    "test": "npm run test:error && npm run test:success",
+    "test": "npm run test:unit && npm run test:error && npm run test:success",
     "test:unit": "mocha test/*.js",
     "test:success": "cd test/success && node cli.js",
     "test:error": "cd test/error && ! node cli.js",
-    "cover": "! istanbul cover test/success/cli.js test/error/cli.js"
+    "cover": "istanbul cover _mocha -- test/*.js"
   },
   "repository": {
     "type": "git",
