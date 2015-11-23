@@ -1,6 +1,6 @@
 {
   "name": "white-lint",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A tool for creating a cli tool like [standard](https://github.com/feross/standard)",
   "main": "index.js",
   "scripts": {
