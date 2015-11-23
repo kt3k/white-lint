@@ -1,6 +1,6 @@
 # white-lint v1.0.1
 
-> A tool for creating a cli tool like [standard](https://github.com/feross/standard) lint checker.
+> A tool for creating a cli tool like [standard](https://github.com/feross/standard).
 
 # Install
 
@@ -12,10 +12,10 @@ npm install --save white-lint
 
 ```js
 var myLint = require('white-lint')({
-    cmdName: 'snowball',
-    version: '1.0.0'
+    cmdName: "snowball",
+    version: "1.0.0",
     cmdOptions: {
-        eslintOptions: {
+        eslintrc: {
             "options": "..."
         },
         ignore: [],
@@ -39,8 +39,16 @@ The name of the command.
 
 ## version: String
 
-The version name
+The version name.
 
 ## cmdOptions: Object
 
-TBD
+The default options for the command.
+
+### cmdOptions.eslintrc: Object
+
+The default contents of the eslint config.
+
+### cmdOptions.parser: String
+
+The parser.
