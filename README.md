@@ -16,7 +16,7 @@ var myLint = require('white-lint')({
     version: "1.0.0",
     cmdOptions: {
         eslintrc: {
-            "options": "..."
+            "extends": "eslint-config-foobar"
         },
         parser: "parser"
     }
@@ -26,7 +26,35 @@ var myLint = require('white-lint')({
 myLint.lintAsCli()
 ```
 
-# Options
+The above example works as a lint checker similar to [standard](https://github.com/feross/standard), but using `eslint-config-foobar` shareable config in this case.
+
+# How cli works
+
+Here is the cli help message.
+
+```
+Usage:
+    $(cmdName) <flags> [FILES...]
+
+    If FILES is omitted, then all JavaScript source files (*.js, *.jsx) in the current
+    working directory are checked, recursively.
+
+    Certain paths (node_modules/, .git/, coverage/, *.min.js, bundle.js) are
+    automatically ignored.
+
+Flags:
+        --global    Declare global variable (can be set multiple times)
+        --parser    Use custom js parser (e.g. babel-eslint)
+    -2, --2         Use 2 space indent
+    -4, --4         Use 4 space indent
+        --tab       Use tab indent
+        --semi      Use semicolon
+        --no-semi   Don't use semicolon
+    -h, --help      Show usage information
+    -v, --version   Show current version
+```
+
+# Tool Options
 
 ## cmdName: String
 
