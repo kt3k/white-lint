@@ -18,14 +18,9 @@ var myLint = require('white-lint')({
         eslintrc: {
             "options": "..."
         },
-        ignore: [],
-        globals: [],
         parser: "parser"
     }
 })
-
-// execute lint as a node API
-myLint.lint()
 
 // execute lint as a cli
 myLint.lintAsCli()
@@ -52,3 +47,7 @@ The default contents of the eslint config.
 ### cmdOptions.parser: String
 
 The parser.
+
+# License
+
+MIT
