@@ -1,4 +1,4 @@
-# white-lint v1.2.1 [![Build Status](https://travis-ci.org/kt3k/white-lint.svg?branch=master)](https://travis-ci.org/kt3k/white-lint) [![codecov.io](https://codecov.io/github/kt3k/white-lint/coverage.svg?branch=master)](https://codecov.io/github/kt3k/white-lint?branch=master)
+# white-lint v2.0.0 [![Build Status](https://travis-ci.org/kt3k/white-lint.svg?branch=master)](https://travis-ci.org/kt3k/white-lint) [![codecov.io](https://codecov.io/github/kt3k/white-lint/coverage.svg?branch=master)](https://codecov.io/github/kt3k/white-lint?branch=master)
 
 > A tool for creating a cli tool like [standard](https://github.com/feross/standard).
 
