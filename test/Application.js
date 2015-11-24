@@ -200,13 +200,30 @@ describe('Application', function () {
 
         })
 
-        it('calls lint when cliOptions do not have h, v, help or version', function (done) {
+        it('calls lintFiles when cliOptions have _ and do not have h, v, help or version', function (done) {
 
             var cmdOptions = {}
 
-            app.lint = function () {
+            app.lintFiles = function (files, cmdOptions0) {
 
-                expect(cmdOptions).to.equal(cmdOptions)
+                expect(cmdOptions0).to.equal(cmdOptions)
+                expect(files).to.eql(['a', 'b'])
+
+                done()
+
+            }
+
+            app.execute({_: ['a', 'b']}, cmdOptions)
+
+        })
+
+        it('calls lintAll when cliOptions do not have _, h, v, help or version', function (done) {
+
+            var cmdOptions = {}
+
+            app.lintAll = function (cmdOptions0) {
+
+                expect(cmdOptions0).to.equal(cmdOptions)
 
                 done()
 
@@ -232,13 +249,13 @@ describe('Application', function () {
 
     })
 
-    describe('lint', function () {
+    describe('lintAll', function () {
 
-        it('lints files', function () {
+        it('lints the all files', function () {
 
             app.glob = function () { return Promise.resolve([__filename]) }
 
-            return app.lint({globals: ['it', 'describe', 'beforeEach']}).then(function (exitCode) {
+            return app.lintAll({globals: ['it', 'describe', 'beforeEach']}).then(function (exitCode) {
 
                 expect(exitCode).to.equal(0)
 
